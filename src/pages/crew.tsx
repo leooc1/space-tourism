@@ -27,8 +27,8 @@ export default function Crew() {
             <Layout bg='crew'>
                 <main className={`flex pt-10 min-h-screen flex-col items-center ${poppins.className}
                                 md:flex-row md:items-start `}>
-                    <section className="w-1/2 flex flex-col items-center 
-                                                        sm:pl-4">
+                    <section className="flex flex-col items-center w-full px-1
+                                        md:w-1/2 md:px-0 sm:pl-4">
                         <h2 className="pb-14 float-left uppercase text-white text-xl tracking-widest text-center
                                         md:pl-7 md:text-left">
                             <span className="text-neutral-500 font-bold tracking-widest">02 </span>
@@ -38,7 +38,7 @@ export default function Crew() {
                             <h3 className="my-5 text-white text-4xl uppercase font-serif tracking-widest">{dados?.crew[index].name}</h3>
                             <p className="mt-5 text-white text-lg font-extralight">{dados?.crew[index].bio}</p>
                         </section>
-                        <div className="mt-10 w-2/5 flex justify-evenly">
+                        <div className="mt-10 sm:w-2/5 w-3/4 flex justify-evenly">
                             <button className={`p-3 rounded-full ${index === 0 ?'bg-white btn-crew outline-4 outline-white outline-double':'bg-neutral-500'}`} onClick={()=>setIndex(0)}></button>
                             <button className={`p-3 rounded-full ${index === 1 ?'bg-white btn-crew outline-4 outline-white outline-double':'bg-neutral-500'}`} onClick={()=>setIndex(1)}></button>
                             <button className={`p-3 rounded-full ${index === 2 ?'bg-white btn-crew outline-4 outline-white outline-double':'bg-neutral-500'}`} onClick={()=>setIndex(2)}></button>
