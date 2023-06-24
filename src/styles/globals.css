@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: #0B0E17;
+    height: 100%;
+}
+
+#__next{
+    height: 100%;
+}
+
+.btn-animated{
+    animation: btn-animation .4s ease-in-out;
+}
+
+@keyframes btn-animation{
+    0%{
+        border-color: transparent;
+    }
+    100%{
+        border-color: #fff;
+    }
+}
+
+.btn-crew{
+    animation: btn-crew .4s ease-in-out;
+}
+
+@keyframes btn-crew{
+    0%{
+        /* background-color: #737373; */
+        scale: 1.3;
+    }
+    100%{
+        /* background-color: #fff; */
+        scale: 1;
+    }
+}
