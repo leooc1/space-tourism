@@ -17,11 +17,12 @@ export default function Technology() {
             })
             .catch(err => console.log(err))
     }, [index])
-    console.log(dados)
+    
     return (
         <>
             <Head>
                 <title>Space Tourism | Technology</title>
+                <link rel="shortcut icon" href="/shared/logo.svg" type="image/x-icon" />
             </Head>
             <Layout bg='technology'>
                 <main className={`flex pt-10 min-h-screen flex-col items-center ${poppins.className}

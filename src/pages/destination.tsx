@@ -22,6 +22,7 @@ export default function Destination() {
         <>
             <Head>
                 <title>Space Tourism | Destination</title>
+                <link rel="shortcut icon" href="/shared/logo.svg" type="image/x-icon" />
             </Head>
             <Layout bg='destination'>
                 <main className={`flex pt-10 min-h-screen flex-col items-center ${poppins.className}

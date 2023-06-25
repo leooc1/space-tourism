@@ -11,6 +11,7 @@ export default function Home() {
     <>
       <Head>
         <title>Space Tourism</title>
+        <link rel="shortcut icon" href="/shared/logo.svg" type="image/x-icon" />
       </Head>
       <Layout bg='home'>
         <main className={`flex pt-24 min-h-screen flex-col items-center ${poppins.className}
