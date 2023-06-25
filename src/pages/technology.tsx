@@ -16,7 +16,7 @@ export default function Technology() {
                 setDados(data)
             })
             .catch(err => console.log(err))
-    }, [dados])
+    }, [index])
     console.log(dados)
     return (
         <>

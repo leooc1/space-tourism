@@ -14,12 +14,10 @@ export default function Destination() {
             .then(res => res.json())
             .then(data => {
                 setDados(data)
-                // console.log(data)
-                // console.log(dados)
             })
             .catch(err => console.log(err))
-    }, [dados, index])
-
+    }, [index])
+    
     return (
         <>
             <Head>
@@ -51,11 +49,13 @@ export default function Destination() {
                         <div className="w-3/4 bg-neutral-700 p-px my-6"></div>
                         <section className="w-3/4 flex flex-col items-center gap-4
                         md:flex-row md:items-start md:gap-0">
-                            <div className="uppercase font-light w-1/2 text-3xl text-white">
+                            <div className="uppercase font-light w-1/2 text-3xl text-white 
+                            md:text-left text-center">
                                 <p className={`font-light text-neutral-300 text-base`}>avg. distance</p>
                                 <p>{dados?.destinations[index].distance}</p>
                             </div>
-                            <div className="uppercase font-light w-1/2 text-3xl text-white">
+                            <div className="uppercase font-light w-1/2 text-3xl text-white 
+                            md:text-left text-center">
                                 <p className={`font-light text-neutral-300 text-base`}>est. travel time</p>
                                 <p>{dados?.destinations[index].travel}</p>
                             </div>

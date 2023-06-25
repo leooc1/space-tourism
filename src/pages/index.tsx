@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout"
 import { Poppins } from "next/font/google"
+import Link from "next/link"
 import Head from "next/head"
 
 
@@ -27,8 +28,10 @@ export default function Home() {
           </section>
           <section className="flex items-end pb-8 justify-center h-72 
         md:w-1/2">
-            <button className="uppercase h-52 w-52 bg-white text-2xl font-serif rounded-full"
-              style={{ letterSpacing: '3px' }}>Explore</button>
+            <Link href='/destination'>
+              <button className="uppercase h-52 w-52 bg-white text-2xl font-serif rounded-full"
+                style={{ letterSpacing: '3px' }}>Explore</button>
+            </Link>
           </section>
         </main>
       </Layout>

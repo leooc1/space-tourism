@@ -49,3 +49,7 @@ body{
         scale: 1;
     }
 }
+
+.transition-menu{
+    transition: all .4s ease-in-out;
+}
