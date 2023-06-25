@@ -32,7 +32,11 @@ export default function Destination() {
                         md:pl-7 md:text-left">
                             <span className="text-neutral-500 font-bold tracking-widest">01 </span>
                             pick your destination</h2>
-                        <Image src={dados?.destinations[index].images.png} alt="" width={350} height={350} />
+                        <Image src={index === 0 ? '/destination/image-moon.png' :
+                        index === 1 ? '/destination/image-mars.png' :
+                        index === 2 ? '/destination/image-europa.png' : 
+                        index === 3 ? '/destination/image-titan.png' : ''
+                        } alt="" width={350} height={350} />
                     </section>
                     <section className="flex flex-col mt-10 pb-8 items-center h-72 
                                         md:w-1/2">

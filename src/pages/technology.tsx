@@ -47,7 +47,10 @@ export default function Technology() {
                     </section>
                     <section className="flex mt-10 pb-8 justify-end h-72 
                                         md:w-1/2">
-                        <Image src={dados?.technology[index].images.portrait} className="w-96 h-fit" alt="" width={350} height={350} />
+                        <Image src={index === 0 ? '/technology/image-launch-vehicle-portrait.jpg' :
+                        index === 1 ? '/technology/image-space-capsule-portrait.jpg' :
+                        index === 2 ? '/technology/image-spaceport-portrait.jpg' : ''
+                        } className="w-96 h-fit" alt="" width={350} height={350} />
                     </section>
                 </main>
             </Layout>

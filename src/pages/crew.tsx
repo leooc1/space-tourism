@@ -47,7 +47,11 @@ export default function Crew() {
                     </section>
                     <section className="flex mt-10 pb-8 justify-center h-72 
                                         md:w-1/2">
-                        <Image src={dados?.crew[index].images.png} className="h-fit" alt="" width={350} height={350} />
+                        <Image src={index === 0 ? '/crew/image-douglas-hurley.png' :
+                        index === 1 ? '/crew/image-mark-shuttleworth.png' :
+                        index === 2 ? '/crew/image-victor-glover.png' : 
+                        index === 3 ? '/crew/image-anousheh-ansari.png' : ''
+                        } className="h-fit" alt="" width={350} height={350} />
                     </section>
                 </main>
             </Layout>
